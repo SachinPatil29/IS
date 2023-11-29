@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import ReCAPTCHA from "react-google-recaptcha";
 import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
   MDBCard,
   MDBCardBody,
+  MDBCol,
+  MDBContainer,
   MDBInput,
-}
-from 'mdb-react-ui-kit';
-import  Button  from 'react-bootstrap/Button';
+  MDBRow,
+} from 'mdb-react-ui-kit';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Login() {
 
@@ -29,7 +28,7 @@ export default function Login() {
     else{
       setAuthMessage('');
       
-      let response=await fetch('http://localhost:80/api', {
+      let response=await fetch('https://is-backend.onrender.com/api', {
 
         method: 'POST', 
         mode: 'cors', 
