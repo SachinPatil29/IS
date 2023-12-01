@@ -77,7 +77,7 @@ export default function Login() {
                 <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Email address' id='formControlLgEmail' type='email' size="lg" required value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
                 <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Password' id='formControlLgPassword' type='password' size="lg" required value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
 
-                <ReCAPTCHA sitekey="6LfhkCIpAAAAALvB47YFIGuYxWIZKGjNbIMhvgW1" required onChange={()=>{setStatus(true)}}/>
+                <ReCAPTCHA sitekey="6Ld4kSIpAAAAAAal82cwbFI_BN9_QcTD_by7Ao3A" required onChange={()=>{setStatus(true)}}/>
                 
                 <br></br>
 
